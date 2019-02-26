@@ -1,0 +1,5 @@
+node_modules
+.sonarlint
+logs
+coverage
+CHANGELOG.md
