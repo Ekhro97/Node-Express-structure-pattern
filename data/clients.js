@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   policies: [
     {
       id: '64cceef9-3a01-49ae-a23b-3761b604800b',

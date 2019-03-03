@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   clients: [
     {
       id: 'a0ece5db-cd14-4f21-812f-966633e7be86',

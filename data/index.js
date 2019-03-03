@@ -1,2 +1,4 @@
-export { default as clients } from './clients';
-export { default as policies } from './policies';
+const clients = require('./clients');
+const policies = require('./policies');
+
+module.exports = { clients, policies };
