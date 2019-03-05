@@ -1,4 +1,4 @@
-const clients = require('./clients');
-const policies = require('./policies');
+const clientsData = require('./clientsData');
+const policiesData = require('./policiesData');
 
-module.exports = { clients, policies };
+module.exports = { clientsData, policiesData };
