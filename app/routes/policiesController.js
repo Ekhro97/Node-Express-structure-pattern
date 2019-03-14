@@ -10,8 +10,6 @@ router.get('/:userId', (req, res) => {
     params: { userId },
   } = req;
 
-  console.log(req.params);
-
   getUserPolicies(userId)
     .then((client) => res.status(200).send(client))
     .catch((error) => res.status(400).send(error));

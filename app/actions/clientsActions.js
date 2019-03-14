@@ -9,25 +9,17 @@ const getClients = async () => {
 const getClientsById = async (id) => {
   const { clients } = clientsData;
 
-  const _client = await clients.find((client) => {
-    return client.id === id;
-  });
+  const _client = await clients.find((client) => client.id === id);
 
-  if (!_client) return clientNotFound;
-
-  return _client;
+  return _client || clientNotFound;
 };
 
 const getClientsByUsername = async (name) => {
   const { clients } = clientsData;
 
-  const _client = await clients.find((client) => {
-    return client.name === name;
-  });
+  const _client = await clients.find((client) => client.name === name);
 
-  if (!_client) return clientNotFound;
-
-  return _client;
+  return _client || clientNotFound;
 };
 
 module.exports = { getClients, getClientsById, getClientsByUsername };

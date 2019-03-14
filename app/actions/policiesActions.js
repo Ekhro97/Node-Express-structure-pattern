@@ -17,9 +17,7 @@ const getUserPolicies = async (userId) => {
 
   const _userPolicies = policies.filter((policy) => policy.clientId === userId);
 
-  if (_userPolicies < 1) return noAssignedPolicies;
-
-  return _userPolicies;
+  return _userPolicies.length ? _userPolicies : noAssignedPolicies;
 };
 
 module.exports = { getPolicies, getUserPolicies };

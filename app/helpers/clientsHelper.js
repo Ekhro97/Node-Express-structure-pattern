@@ -3,14 +3,9 @@ const { clientsData } = require('../../data');
 const clientExists = async (clientId) => {
   const { clients } = clientsData;
 
-  const _client = await clients.find((client) => {
-    return client.id === clientId;
-  });
+  const _client = await clients.find((client) => client.id === clientId);
 
-  console.log(_client);
-  if (_client) return true;
-
-  return false;
+  return !!_client;
 };
 
 module.exports = { clientExists };
